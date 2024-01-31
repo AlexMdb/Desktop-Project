@@ -1,0 +1,7 @@
+function getSongName(){
+
+}
+
+function changeSongName(){
+    
+}
