@@ -45,19 +45,103 @@
 
 <body>
     <!-- Section with video background -->
-    <section>
+    <div>
         <div class="video-container">
 
             <!-- Video BG -->
-            <video autoplay muted loop id="video-bg" alt="Background Video">
+            <video autoplay muted loop id="video-bg" alt="Background Video" onclick="hideMenu();">
                 <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
                 Your Browser Unfortunately Doesn't Support the "Video" Element. Please Try Another Browser.
             </video>
 
         </div>
-    </section>
+    </div>
 
-    <section id="bottom-text">
+    <div onclick="showMenu();" id="kebab"></div>
+
+    <div id="options-menu">
+
+        <p onclick="hideMenu();"> &lt;&lt;&lt; </p>
+
+        <p> Pick one </p>
+
+        <div id="bgChanger-container">
+
+        <div id="bgVideoChanger">
+
+            <div id="wallpaper-sample">
+
+                <video onclick="changeBG(github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4);">
+
+                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
+
+                </video>
+
+                <p> Japanese Room </p>
+
+            </div>
+
+            <div id="wallpaper-sample">
+
+                <video onclick="changeBG();">
+
+                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
+
+                </video>
+
+                <p> Japanese Room </p>
+
+            </div>
+
+        </div>
+
+        <div id="bgVideoChanger">
+
+            <div id="wallpaper-sample">
+
+                <video onclick="changeBG();">
+
+                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
+
+                </video>
+
+                <p> Japanese Room </p>
+
+            </div>
+
+            <div id="wallpaper-sample">
+
+                <video onclick="changeBG();">
+
+                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
+
+                </video>
+
+                <p> Japanese Room </p>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        <div id="newsSourcePicker">
+
+            <ul>
+
+                <li><button> News Source 1 </button></li>
+                <li><button> News Source 2 </button></li>
+                <li><button> News Source 3 </button></li>
+
+            </ul>
+
+        </div>
+
+        <p id="copyright"> &copy; 2024, Aurora Santos.</p>
+
+    </div>
+
+    <div id="bottom-text">
 
         <!-- Display current time -->
         <div id="Time" class="time-display"><h1>12:00</h1></div>
@@ -73,12 +157,14 @@
                 <a href=""><li></li></a>
         </div>
         
-    </section>
+    </div>
 
 </body>
 
 <script src="Date.js"></script>
 <script src="Time.js"></script>
 <script src="News.js"></script>
+<script src="Menu.js"></script>
+<script src="changeBG.js"></script>
 
 </html>
