@@ -1,5 +1,6 @@
 const menu = document.getElementById('options-menu');
 const kebab = document.getElementById('kebab');
+const thumbnails = document.getElementById('wallpaper-sample');
 
 function showMenu(){
     menu.style.left = '0vw';
@@ -12,7 +13,7 @@ function hideMenu(){
 }
 
 document.addEventListener('click', function(event){
-    if (event.target !== menu && event.target !== kebab){
+    if (event.target !== menu && event.target !== kebab && event.target !== thumbnails){
         hideMenu();
     }
 });

@@ -43,7 +43,16 @@
 
 </head>
 
-<body>
+<body id="main">
+
+    <!-- Loading Screen -->
+
+    <div id="loading-screen">
+
+        <h2> NOW LOADING... </h2>
+
+    </div>
+
     <!-- Section with video background -->
     <div>
         <div class="video-container">
@@ -59,19 +68,21 @@
 
     <div onclick="showMenu();" id="kebab"></div>
 
+    <!-- Options Menu -->
     <div id="options-menu">
 
+
+        <!-- Closes the Menu -->
         <p onclick="hideMenu();"> &lt;&lt;&lt; </p>
 
-        <p> Pick one </p>
-
+        <!-- Wallpaers Samples, and changer -->
         <div id="bgChanger-container">
 
         <div id="bgVideoChanger">
 
             <div id="wallpaper-sample">
 
-                <video onclick="changeBG(github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4);">
+                <video autoplay muted loop  onclick="changeBG('//github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4');">
 
                     <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
 
@@ -83,48 +94,20 @@
 
             <div id="wallpaper-sample">
 
-                <video onclick="changeBG();">
+                <video autoplay muted loop onclick="changeBG('https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Lo-Fi_Coffee.mp4');">
 
-                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
-
-                </video>
-
-                <p> Japanese Room </p>
-
-            </div>
-
-        </div>
-
-        <div id="bgVideoChanger">
-
-            <div id="wallpaper-sample">
-
-                <video onclick="changeBG();">
-
-                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
+                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Lo-Fi_Coffee.mp4" type="video/mp4">
 
                 </video>
 
-                <p> Japanese Room </p>
-
-            </div>
-
-            <div id="wallpaper-sample">
-
-                <video onclick="changeBG();">
-
-                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
-
-                </video>
-
-                <p> Japanese Room </p>
-
+                <p> Lo-Fi Coffee</p>
             </div>
 
         </div>
 
         </div>
 
+        <!-- News Source Picker-->
         <div id="newsSourcePicker">
 
             <ul>
@@ -159,12 +142,13 @@
         
     </div>
 
-</body>
+    <script src="Date.js"></script>
+    <script src="Time.js"></script>
+    <script src="News.js"></script>
+    <script src="Menu.js"></script>
+    <script src="changeBG.js"></script>
+    <script src="loading.js"></script>
 
-<script src="Date.js"></script>
-<script src="Time.js"></script>
-<script src="News.js"></script>
-<script src="Menu.js"></script>
-<script src="changeBG.js"></script>
+</body>
 
 </html>
