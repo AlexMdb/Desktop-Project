@@ -10,5 +10,6 @@ A Live Wallpaper.
 A Clock.
 
 The top three r/all posts.
+(Planning to add, other news sites.)
 
 And a music player.
