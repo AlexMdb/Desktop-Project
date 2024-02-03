@@ -91,6 +91,7 @@ body, html{
 
 #bgChanger-container{
     margin: 0;
+    border-bottom: 2px solid goldenrod;
 }
 
 #bgVideoChanger{
