@@ -1,7 +1,0 @@
-function getSongName(){
-
-}
-
-function changeSongName(){
-    
-}

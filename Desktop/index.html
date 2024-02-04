@@ -1,175 +1,127 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
-    <!-- Basics -->
-
+    <!-- Meta information for character set, viewport, keywords, etc. -->
+    
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="keywords" content="Desktop, Customization, Aesthetic">
-
     <meta name="robots" content="index, follow">
-
     <meta name="mobile-web-app-capable" content="yes">
 
-    <!-- Sharing Card -->
+    <!-- Open Graph meta tags for social media sharing -->
 
     <meta property="og:title" content="Desktop">
-    <meta property="og:description" content="A site I made inspired by my Desktop.">
+    <meta property="og:description" content="A site inspired by my Desktop.">
     <meta property="og:image" content="https://static.vecteezy.com/system/resources/thumbnails/000/569/420/small/vector60-3894-01.jpg">
     <meta property="og:url" content="http://127.0.0.1:5500/index.html">
-
-    <!-- Visible Stuff -->
-
+    
+    <!-- Author and description meta tags -->
+    
     <title>Desktop</title>
 
-    <meta name="author" content="Aurora Santos.">
+    <meta name="author" content="Aurora Santos">
+    <meta name="description" content="A site inspired by my Desktop">
 
-    <meta name="description" content="A site I made inspired by my Desktop.">
-
+    <!-- Favicon for the website -->
+    
     <link rel="icon" href="android-chrome-192x192.png" type="image/x-icon">
 
-    <!-- Stylesheets -->
-
+    <!-- External CSS stylesheets -->
+    
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font -->
-
     <link rel="stylesheet" href="fonts.css">
 
 </head>
 
 <body>
 
-    <!-- Loading Screen -->
+    <!-- Loading screen -->
 
-    <div id="loading"><div class="ring">Loading... <span></span></div></div>
+    <div id="loading">
+        <div class="ring">Loading... <span></span></div>
+    </div>
 
     <section id="main">
 
-    <!-- Section with video background -->
-    <div>
-        <div class="video-container">
+        <div>
+            <!-- Background video container -->
 
-            <!-- Video BG -->
-            <video autoplay muted loop id="video-bg" alt="Background Video" onclick="hideMenu();">
-                <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
-                Your Browser Unfortunately Doesn't Support the "Video" Element. Please Try Another Browser.
-            </video>
+            <div class="video-container">
 
-        </div>
-    </div>
-
-    <div onclick="showMenu();" id="kebab"></div>
-
-    <!-- Options Menu -->
-    <div id="options-menu">
-
-
-        <!-- Closes the Menu -->
-        <p onclick="hideMenu();"> You can pick an wallpaper here: </p>
-
-        <!-- Wallpaers Samples, and changer -->
-        <div id="bgChanger-container">
-
-        <div id="bgVideoChanger">
-
-            <div id="wallpaper-sample">
-
-                <video autoplay muted loop  onclick="changeBG('//github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4');">
-
+                <!-- Background video with source and alternative text -->
+                <video autoplay muted loop id="video-bg" alt="Background Video" onclick="hideMenu();">
                     <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
-
+                    Your Browser Unfortunately Doesn't Support the "Video" Element. Please Try Another Browser.
                 </video>
-
-                <p> Japanese Room </p>
-
             </div>
-
-            <div id="wallpaper-sample">
-
-                <video autoplay muted loop onclick="changeBG('https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Lo-Fi_Coffee.mp4');">
-
-                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Lo-Fi_Coffee.mp4" type="video/mp4">
-
-                </video>
-
-                <p> Lo-Fi Coffee </p>
-            </div>
-
         </div>
 
-        <div id="bgVideoChanger">
+        <div onclick="showMenu();" id="kebab"></div>
 
-            <div id="wallpaper-sample">
+        <div id="options-menu">
+            <p onclick="hideMenu();"> You can pick a wallpaper here: </p>
 
-                <video autoplay muted loop  onclick="changeBG('https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Anime-Store-Rain-Wallpaper.mp4');">
+            <!-- Wallpaper options with associated videos and labels -->
+            <div id="bgChanger-container">
+                <div id="bgVideoChanger">
 
-                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Anime-Store-Rain-Wallpaper.mp4" type="video/mp4">
+                    <div id="wallpaper-sample">
+                        <video autoplay muted loop onclick="changeBG('https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4');">
+                            <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Japanese-Room.mp4" type="video/mp4">
+                        </video>
+                        <p> Japanese Room </p>
+                    </div>
 
-                </video>
+                    <div id="wallpaper-sample">
+                        <video autoplay muted loop onclick="changeBG('https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Lo-Fi_Coffee.mp4');">
+                            <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Lo-Fi_Coffee.mp4" type="video/mp4">
+                        </video>
+                        <p> Lo-Fi Coffee </p>
+                    </div>
 
-                <p> Store in the rain </p>
+                </div>
 
+                <div id="bgVideoChanger">
+
+                    <div id="wallpaper-sample">
+                        <video autoplay muted loop onclick="changeBG('https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Anime-Store-Rain-Wallpaper.mp4');">
+                            <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Anime-Store-Rain-Wallpaper.mp4" type="video/mp4">
+                        </video>
+                        <p> Store in the rain </p>
+                    </div>
+
+                    <div id="wallpaper-sample">
+                        <video autoplay muted loop onclick="changeBG('https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Night-Street-Wallpaper.mp4');">
+                            <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Night-Street-Wallpaper.mp4" type="video/mp4">
+                        </video>
+                        <p> Night Street </p>
+                    </div>
+
+                </div>
             </div>
 
-            <div id="wallpaper-sample">
-
-                <video autoplay muted loop onclick="changeBG('https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Night-Street-Wallpaper.mp4');">
-
-                    <source src="https://github.com/EtherAurora/Desktop-Project/raw/main/Desktop/Night-Street-Wallpaper.mp4" type="video/mp4">
-
-                </video>
-
-                <p> Night Street </p>
-            </div>
-
+            <!-- Copyright information -->
+            <p id="copyright"> &copy; 2024, Aurora Santos.</p>
         </div>
 
-        </div>
+        <!-- Bottom text section with time, date, and news display -->
+        <div id="bottom-text">
 
-        <!-- News Source Picker-->
-        <div id="newsSourcePicker">
+            <div id="Time" class="time-display"><h1>12:00</h1></div>
+            <div id="Date" class="date-display"><h2>Monday, January 01</h2></div>
 
-            <p> Pick the source of the news </p>
-
-            <ul>
-
-                <li><button> News Source 1 </button></li>
-                <li><button> News Source 2 </button></li>
-                <li><button> News Source 3 </button></li>
-
-            </ul>
-
-        </div>
-
-        <p id="copyright"> &copy; 2024, Aurora Santos.</p>
-
-    </div>
-
-    <div id="bottom-text">
-
-        <!-- Display current time -->
-        <div id="Time" class="time-display"><h1>12:00</h1></div>
-
-        <!-- Display current date -->
-        <div id="Date" class="date-display"><h2>Monday, January 01</h2></div>
-
-        <!-- Display news -->
-        <div id="News" class="news-display">
-
+            <div id="News" class="news-display">
                 <a href=""><li></li></a>
                 <a href=""><li></li></a>
                 <a href=""><li></li></a>
-        </div>
-        
-    </div>
+            </div>
 
-</section> 
+        </div>
+
+    </section>
 
     <script src="Date.js"></script>
     <script src="Time.js"></script>
